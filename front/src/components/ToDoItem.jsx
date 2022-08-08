@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
+import { Typography } from '@mui/material';
+import moment from 'moment';
 
 const ToDoItem = ({ todoItem, getData }) => {
   const [edited, setEdited] = useState(false);
@@ -41,8 +43,14 @@ const ToDoItem = ({ todoItem, getData }) => {
       getData();
     });
   };
+  const createdTime = moment(todoItem.createdAt).format("YYYY년 MM월 DD일")
 
   return (
+    <div>
+      <Typography fontSize={12}>
+        {createdTime}
+      </Typography>
+
     <li className="todoapp__item">
       {/* 아이템 완료 체크 / 체크 해제를 위한 체크박스 */}
       <input
@@ -104,6 +112,7 @@ const ToDoItem = ({ todoItem, getData }) => {
         🗑
       </button>
     </li>
+    </div>
   );
 };
 
