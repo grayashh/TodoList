@@ -1,6 +1,6 @@
 {
-  "short_name": "SMWTD",
-  "name": "ShowMeWhatToDo",
+  "short_name": "TDL",
+  "name": "ToDo List",
   "icons": [
     {
       "src": "favicon.ico",

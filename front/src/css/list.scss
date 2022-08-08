@@ -1,0 +1,46 @@
+.checked {
+  cursor: pointer;
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.list-container {
+  margin-bottom: 0.8rem;
+
+  .list-con {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 1.3rem;
+      color: #222;
+    }
+  }
+
+  .list-btn {
+    cursor: pointer;
+    display: flex;
+    color: #b4b4b4;
+
+    .edit-icon {
+      margin-right: 15px;
+      &:hover {
+        color: #e4f400;
+      }
+    }
+
+    .checked-icon {
+      margin-right: 15px;
+
+      &:hover {
+        color: #3ae374;
+      }
+    }
+
+    .delete-icon {
+      &:hover {
+        color: #eb4d4b;
+      }
+    }
+  }
+}
