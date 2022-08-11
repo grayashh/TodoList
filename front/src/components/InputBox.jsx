@@ -27,7 +27,6 @@ const InputBox = ({ getData }) => {
       };
       axios.post("/todo", todo).then((res) => {
         getData();
-        console.log(todo);
       });
     }
     // input 값 초기화 및 포커싱
